@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Product Study · Three.js Visuals B</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./style.css">
+  <script type="importmap">{"imports":{"three":"../../../node_modules/three/build/three.module.js","three/addons/":"../../../node_modules/three/examples/jsm/"}}</script>
+</head>
+<body>
+<main>
+  <header class="masthead"><a href="../../">THREE.JS VISUALS</a><span>Study B <i></i> Product study</span></header>
+  <section class="exhibit" aria-label="Optical product and assembly presentation">
+    <div class="intro">
+      <p class="eyebrow">OPTICAL ASSEMBLY / 01</p>
+      <h1>Outside.<br>Then inside.</h1>
+      <p class="lead">First, explore the silhouette and surfaces.<br> Then reveal five parts along one axis.</p>
+      <div class="mode" aria-label="Display mode">
+        <button data-mode="exterior" aria-pressed="true">Exterior</button>
+        <button data-mode="expanded" aria-pressed="false">Exploded</button>
+      </div>
+      <p class="direction-note">The silhouette comes first<br><span>Expand when you are ready to look inside</span></p>
+    </div>
+    <div class="viewer">
+      <div class="viewer-top"><span>CONCEPT SERIES</span><button id="reset" title="Restore the exterior and initial view, and clear selection">Reset <span aria-hidden="true">↺</span></button></div>
+      <div id="stage" role="img" aria-label="Explorable barrel, rear lens, spacer, front lens, and retainer" aria-describedby="gesture">
+        <div id="fallback">
+          <svg viewBox="0 0 600 260" role="img" aria-label="Barrel, rear lens, spacer, front lens, and retainer on one axis">
+            <path d="M35 130H565" fill="none" stroke="#a3aaa5" stroke-dasharray="4 7"/>
+            <g fill="none" stroke="#44514d" stroke-width="4"><path d="M52 67H129V88H70V172H129V193H52Z"/><ellipse cx="208" cy="130" rx="17" ry="53"/><path d="M293 78H310V96H303V164H310V182H293Z"/><ellipse cx="402" cy="130" rx="24" ry="66"/><path d="M489 64H513V83H503V177H513V196H489Z"/></g>
+            <g fill="#59625d" font-size="14" font-family="sans-serif" text-anchor="middle"><text x="90" y="237">Barrel</text><text x="208" y="237">Rear lens</text><text x="301" y="237">Spacer</text><text x="402" y="237">Front lens</text><text x="501" y="237">Retainer</text></g>
+          </svg>
+          <p id="fallback-message">Preparing the 3D view</p>
+        </div>
+      </div>
+      <div class="viewer-bottom"><span id="gesture">Drag to inspect · Select a visible part</span><button id="touch" aria-pressed="false">Enable touch rotation</button><button id="view">Change view <span aria-hidden="true">↗</span></button></div>
+    </div>
+    <div class="assembly" aria-label="Assembly progress">
+      <div class="assembly-heading"><label for="spread">Expand along axis</label><output id="amount" for="spread">0%</output></div>
+      <input id="spread" type="range" min="0" max="100" step="1" value="0">
+      <div class="scale"><span>Whole</span><span>Illustrative spacing</span><span>Separated</span></div>
+    </div>
+    <div class="parts" aria-label="Select and inspect parts">
+      <button data-part="barrel" aria-pressed="false"><span>01</span><strong>Barrel</strong><small>Housing and alignment</small></button>
+      <button data-part="rear" aria-pressed="false"><span>02</span><strong>Rear lens</strong><small>Curve and thickness</small></button>
+      <button data-part="spacer" aria-pressed="false"><span>03</span><strong>Spacer</strong><small>Axial spacing</small></button>
+      <button data-part="front" aria-pressed="false"><span>04</span><strong>Front lens</strong><small>Curve and opening</small></button>
+      <button data-part="retainer" aria-pressed="false"><span>05</span><strong>Retainer</strong><small>Front retention</small></button>
+    </div>
+    <div class="detail"><h2 id="detail-title">Start with the whole</h2><p id="detail-text">Steps, grip texture, and the front opening define the whole. Select a part to reveal the interior, or use the slider to control expansion.</p><button id="clear" disabled>Clear selection</button></div>
+  </section>
+  <footer><p>Concept assembly, not an optical prescription. Expansion preserves the shared axis and part order.</p><span id="status" role="status" aria-live="polite">Preparing the view</span></footer>
+</main>
+<script type="module">
+  import('./main.js').catch(() => {
+    document.querySelector('#fallback-message').textContent='The 3D module failed to load. The 2D assembly order remains available.';
+    document.querySelector('#status').textContent='2D alternative';
+    document.querySelectorAll('button,input').forEach(el => el.disabled = true);
+  });
+</script>
+</body>
+</html>

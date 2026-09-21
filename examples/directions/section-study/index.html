@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f2f0e8">
+  <title>Section Study · Three.js Visuals A</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./style.css">
+  <script type="importmap">{"imports":{"three":"../../../node_modules/three/build/three.module.js","three/addons/":"../../../node_modules/three/examples/jsm/"}}</script>
+</head>
+<body>
+  <main>
+    <header class="intro">
+      <div>
+        <p class="eyebrow">DIRECTION A <span>/</span> SECTION STUDY</p>
+        <h1>Understand the assembly.</h1>
+        <p class="lede">Keep the form. Reveal the structure. Open it along one axis.</p>
+      </div>
+      <p class="specimen"><span>Optical assembly</span>One assembly axis<br>Five parts</p>
+    </header>
+
+    <section class="explorer" aria-label="Optical assembly section study">
+      <div class="scene-topline">
+        <p><span class="status-dot"></span><span id="view-description">Angled section</span> <span class="divider">/</span> <span id="pose-description">Expanded 24%</span></p>
+        <div class="view-switch" aria-label="Viewing angle">
+          <button id="angled" type="button" aria-pressed="true">Angled</button>
+          <button id="side" type="button" aria-pressed="false">Side</button>
+        </div>
+      </div>
+
+      <div id="stage" aria-label="Still 3D section; click a part to select it">
+        <div id="fallback">
+          <svg viewBox="0 0 600 200" role="img" aria-label="2D fallback showing five parts along the assembly axis">
+            <path d="M35 100H565" stroke="#a5a395" stroke-dasharray="4 6"/>
+            <path d="M60 45H190V65H80V135H190V155H60Z" fill="#565f52"/>
+            <path d="M245 58Q209 100 245 142Q277 100 245 58" fill="#86a3a0"/>
+            <path d="M316 56H340V72H316ZM316 128H340V144H316Z" fill="#777966"/>
+            <path d="M414 42Q369 100 414 158Q459 100 414 42" fill="#7b999c"/>
+            <path d="M508 43H529V63H508ZM508 137H529V157H508Z" fill="#a08660"/>
+          </svg>
+          <p id="fallback-message">Preparing the 3D section. Part details below also explain the assembly.</p>
+        </div>
+        <div class="scene-footnote"><span>Pale faces mark the section</span><span>Spacing is illustrative</span></div>
+      </div>
+
+      <div class="progress-controls">
+        <label for="expansion">Expand gradually <output id="amount" for="expansion">24%</output></label>
+        <div class="range-row"><span>Closed</span><input id="expansion" type="range" min="0" max="100" value="24" aria-label="Axial expansion progress"><span>Expanded</span></div>
+        <button id="reset" class="reset" type="button" aria-label="Reset camera, selection, and expansion">Reset <span aria-hidden="true">↶</span></button>
+      </div>
+
+      <div class="part-list" aria-label="Select a part">
+        <button type="button" data-part="barrel" aria-pressed="false"><span>01</span>Barrel</button>
+        <button type="button" data-part="rear" aria-pressed="false"><span>02</span>Rear lens</button>
+        <button type="button" data-part="spacer" aria-pressed="false"><span>03</span>Spacer</button>
+        <button type="button" data-part="front" aria-pressed="false"><span>04</span>Front lens</button>
+        <button type="button" data-part="retainer" aria-pressed="false"><span>05</span>Retainer</button>
+      </div>
+
+      <div class="detail" aria-live="polite" aria-atomic="true">
+        <p id="detail-name">Follow the axis.</p>
+        <p id="detail-copy">Select a part or move the slider. The barrel moves back while the internal parts keep their order.</p>
+        <button id="focus" type="button" disabled>Focus part <span aria-hidden="true">↗</span></button>
+      </div>
+    </section>
+
+    <footer><p>Concept assembly, not an optical prescription. Curvature, dimensions, and fit are illustrative; opaque lens sections clarify structure.</p><p>Click to select · Tab for controls · Arrow keys to expand</p></footer>
+  </main>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-09-21T07:29:53.380Z",
+  "browser": "153.0.8010.12",
+  "three": "186",
+  "idle": true,
+  "keyboardSelection": true,
+  "reset": true,
+  "interrupt": true,
+  "sliderKeyboard": true,
+  "canvasPick": true,
+  "dragNotSelect": true,
+  "viewKeyboard": true,
+  "overflow": {
+    "desktop": false,
+    "mobile390": false,
+    "mobile320": false
+  },
+  "touchMode": true,
+  "reducedMotion": true,
+  "contextLoss": true,
+  "disposal": true,
+  "expandedRendering": {
+    "calls": 37,
+    "triangles": 65280
+  },
+  "pageErrors": []
+}

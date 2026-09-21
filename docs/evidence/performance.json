@@ -1,0 +1,146 @@
+{
+  "browser": "153.0.8010.12",
+  "viewport": {
+    "width": 1440,
+    "height": 1050
+  },
+  "standard": {
+    "selected": null,
+    "hovered": null,
+    "focused": false,
+    "expansion": 0.35,
+    "view": "exterior",
+    "low": false,
+    "touch": false,
+    "alive": true,
+    "fallback": false,
+    "revision": "186",
+    "renderCount": 15,
+    "animating": false,
+    "dpr": 1,
+    "camera": [
+      7.000000000000002,
+      3.6999999999999997,
+      11.000000000000002
+    ],
+    "target": [
+      0.4,
+      0,
+      0
+    ],
+    "zoom": 1,
+    "info": {
+      "render": {
+        "frame": 49,
+        "calls": 18,
+        "triangles": 43842,
+        "points": 0,
+        "lines": 1
+      },
+      "memory": {
+        "geometries": 13,
+        "textures": 4
+      }
+    },
+    "positions": {
+      "barrel": [
+        -0.945,
+        0,
+        0
+      ],
+      "rear": [
+        -0.63,
+        0,
+        0
+      ],
+      "spacer": [
+        0.32249999999999995,
+        0,
+        0
+      ],
+      "front": [
+        1.385,
+        0,
+        0
+      ],
+      "retainer": [
+        2.2725,
+        0,
+        0
+      ]
+    }
+  },
+  "low": {
+    "selected": null,
+    "hovered": null,
+    "focused": false,
+    "expansion": 0.35,
+    "view": "exterior",
+    "low": true,
+    "touch": false,
+    "alive": true,
+    "fallback": false,
+    "revision": "186",
+    "renderCount": 16,
+    "animating": false,
+    "dpr": 1,
+    "camera": [
+      7.000000000000002,
+      3.6999999999999997,
+      11.000000000000002
+    ],
+    "target": [
+      0.4,
+      0,
+      0
+    ],
+    "zoom": 1,
+    "info": {
+      "render": {
+        "frame": 50,
+        "calls": 10,
+        "triangles": 21922,
+        "points": 0,
+        "lines": 1
+      },
+      "memory": {
+        "geometries": 13,
+        "textures": 4
+      }
+    },
+    "positions": {
+      "barrel": [
+        -0.945,
+        0,
+        0
+      ],
+      "rear": [
+        -0.63,
+        0,
+        0
+      ],
+      "spacer": [
+        0.32249999999999995,
+        0,
+        0
+      ],
+      "front": [
+        1.385,
+        0,
+        0
+      ],
+      "retainer": [
+        2.2725,
+        0,
+        0
+      ]
+    }
+  },
+  "timing": {
+    "samples": 60,
+    "medianMs": 21.30000001192093,
+    "p95Ms": 23,
+    "maxMs": 24.399999976158142,
+    "method": "60 requestAnimationFrame intervals after 15 warmup frames during synthetic slider updates; headless Chromium; not GPU timing"
+  }
+}

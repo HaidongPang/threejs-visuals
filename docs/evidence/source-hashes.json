@@ -1,0 +1,33 @@
+{
+  "algorithm": "sha256",
+  "scope": "English skill text, current example source, browser checks, and dependency lockfile on 2026-09-21. Browser runs validate examples, not independent skill behavior. Generated screenshots and reports are excluded.",
+  "files": {
+    "examples/directions/index.html": "6b01a15f8a1b1afb219674addfce2118db90b46e44a99ab7be009f04ea1c64a8",
+    "examples/directions/product-study/README.md": "1c42d14aea0de70b85c29ec5a8f62664e1a515f2ec36b497ed21c13b5e14a954",
+    "examples/directions/product-study/index.html": "9df71e2a427d23a8b4c3f3bb8f76d1c6e900af032d15327ddb90109ce1b0bc31",
+    "examples/directions/product-study/main.js": "96609c7cdeff43fe15de4d61048f1542ef70d009689c2a97f5719b25b88af171",
+    "examples/directions/product-study/style.css": "7ac553ea7c57451d4be2c12648b791b821ed850efd615213ae6d7df2efbfd976",
+    "examples/directions/product-study/verification.md": "9c053d84b46d1e08e2103ccc09f29f2988010caea13ff25d99cd2e4d27281e6b",
+    "examples/directions/product-study/verify.mjs": "100c418616641bbf4115be5b524ab31d16677f61c419e0a33cf672a1aaf6c506",
+    "examples/directions/section-study/README.md": "ef8d9645e83b965fc11a1563ac50d81cc7b7753dc9f48f696f9c77cb10e1033d",
+    "examples/directions/section-study/index.html": "1a90f132ee14797a52416cbb37a4ce2d3de2df781052fd55ba77825b8290656f",
+    "examples/directions/section-study/main.js": "05e770781a1fdc209c5dc4bf6eb9a5f77d72c4b64d53afaa98b0ac6b790a427c",
+    "examples/directions/section-study/style.css": "4e2628db102cf1904b79c1cccbffd88653da3c7f411dc51eb1976c4fe3f620ba",
+    "examples/directions/section-study/validate.mjs": "8e4a76923c5cfebd2003b63fc5114b2c6a4f1fdf04b870c0077c92ab6eb5d682",
+    "examples/optical-assembly/README.md": "5191fc3a3edb8d5c05c2913811e5d62e53e5d7ee79a0e68f186e8ec027eec501",
+    "examples/optical-assembly/index.html": "0eb3d557e3dcc1f9ed2342c4e37c6db5d6b93f6b85f02597516844dfd1d7d8d3",
+    "examples/optical-assembly/main.js": "ff2563a99611c42e6ce1aa4aca982778b6677b0e2afb4519e7fe01d4ee15bb88",
+    "examples/optical-assembly/style.css": "e5df1ca22c4527526854cf46830f2f3ae9f582c04d4934f1b41c420ef9eb1951",
+    "package-lock.json": "fde3afdd7013cf15ea6fb10d275b485452525b512e989f603248ba243cc2156e",
+    "playwright.config.js": "c260c7c6f94366daa0e59a2d4d862787afb0cea1711d42b139ca7c7cf88ae800",
+    "skills/threejs-visuals/SKILL.md": "c0732dfc2ae1c2d5930c6cd82752c9058e7f75d3ade13a175d9a845b842eb8e3",
+    "skills/threejs-visuals/agents/openai.yaml": "f6161df71ec3c1e03c69ffe05b8d2632b04065754c59c394bb2725aed9e0b598",
+    "skills/threejs-visuals/references/assets.md": "39427466c1c2dfb7c88f0e0007989463704484e4d9a056f8a9e07fe74cad25ac",
+    "skills/threejs-visuals/references/interaction.md": "990daab77746f0ceb5e41ae74a61f4fc167087cda657aff72f95c78b35a64b10",
+    "skills/threejs-visuals/references/iteration.md": "4a3bfa90f33527ab612901b774ad75ac0af156204e20971a2d4132f56f0aae39",
+    "skills/threejs-visuals/references/threejs-engineering.md": "02e8fe995fd3c6431b05be839bd3b2d9eaa9ced3810cc035b121fce676da566a",
+    "skills/threejs-visuals/references/verification.md": "c54eb85635cf348ca47f6ab791f603ff9a57127d3385b1f8033b5541a1583507",
+    "skills/threejs-visuals/references/visual-design.md": "39ec2eda1937074bb656f9e6bb949e4f28f238bfcf392765355e04a26f0ea87c",
+    "tests/scene.spec.js": "24e3d966afa6bfd622af9f5a94b71bd1b674fb01bf8a3c4e0e245c33189f1c6d"
+  }
+}

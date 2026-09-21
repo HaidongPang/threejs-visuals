@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Optical Assembly · Three.js Visuals</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./style.css">
+  <script type="importmap">{"imports":{"three":"../../node_modules/three/build/three.module.js","three/addons/":"../../node_modules/three/examples/jsm/"}}</script>
+</head>
+<body>
+<main>
+  <header class="masthead"><a href="https://github.com/HaidongPang/threejs-visuals">THREE.JS VISUALS</a><span>EXPLORABLE MODEL / 01</span></header>
+  <section class="intro"><p class="eyebrow">FORM · STRUCTURE · INTERACTION</p><h1>See how it fits together.</h1><p>One barrel, two curved lenses. Expand along their shared axis to see how the forms fit together.</p></section>
+  <section class="workspace" aria-label="Optical assembly explorer">
+    <div class="stage-wrap">
+      <div class="stage-top"><span class="plate">OPTICAL ASSEMBLY<span>Axial assembly</span></span><div class="views" aria-label="Viewing mode"><button id="cutaway" aria-pressed="true">Cutaway</button><button id="exterior" aria-pressed="false">Exterior</button></div></div>
+      <div id="stage" role="img" aria-label="Barrel, rear lens, spacer, front lens, and retainer on one axis" aria-describedby="instructions">
+        <div id="fallback"><svg viewBox="0 0 700 300" aria-label="2D alternative showing five parts in assembly order" role="img"><path d="M40 150H660" stroke="#a4aaa2" stroke-dasharray="5 6"/><g fill="none" stroke="#244c45" stroke-width="4"><path d="M75 90H155V110H90V190H155V210H75Z"/><ellipse cx="245" cy="150" rx="18" ry="65"/><path d="M345 85H365V110H352V190H365V215H345Z"/><ellipse cx="470" cy="150" rx="24" ry="74"/><path d="M565 83H588V106H575V194H588V217H565Z"/></g><g font-family="sans-serif" font-size="15" fill="#44524b" text-anchor="middle"><text x="115" y="260">Barrel</text><text x="245" y="260">Rear lens</text><text x="355" y="260">Spacer</text><text x="470" y="260">Front lens</text><text x="578" y="260">Retainer</text></g></svg><p id="fallback-message">Preparing the 3D view. The diagram shows assembly order.</p></div>
+      </div>
+      <div class="stage-bottom"><span id="instructions">Drag to orbit · Scroll to zoom · Click to select</span><button id="touch-toggle" aria-pressed="false">Enable touch rotation</button><span id="view-caption">A cutaway reveals the interior</span></div>
+    </div>
+    <aside aria-label="Parts and controls">
+      <div class="aside-title"><span class="eyebrow">EXPLORE THE PARTS</span><span>05</span></div>
+      <div id="parts" aria-label="Select a part">
+        <button data-part="barrel" aria-pressed="false"><span>01</span>Barrel<small>Housing and alignment</small></button>
+        <button data-part="rear" aria-pressed="false"><span>02</span>Rear lens<small>Biconvex surface</small></button>
+        <button data-part="spacer" aria-pressed="false"><span>03</span>Spacer<small>Maintains spacing</small></button>
+        <button data-part="front" aria-pressed="false"><span>04</span>Front lens<small>Biconvex surface</small></button>
+        <button data-part="retainer" aria-pressed="false"><span>05</span>Retainer<small>Axial retention</small></button>
+      </div>
+      <div class="detail"><h2 id="detail-title">Start with the whole</h2><p id="detail-text">Select a part to inspect its shape and position, or use the slider to expand the assembly step by step.</p><button id="focus" disabled>Focus selected <span aria-hidden="true">↗</span></button><button id="clear" disabled>Clear selection</button></div>
+    </aside>
+    <div class="controls"><div class="range-title"><label for="explode">Assembly spacing</label><output for="explode" id="amount">35%</output></div><input id="explode" type="range" min="0" max="100" step="1" value="35"><div class="range-ends"><span>Closed</span><span>Expanded</span></div><div class="actions"><button id="reset">Reset</button><label class="quality"><input id="low-quality" type="checkbox">Low power</label><span id="status" role="status" aria-live="polite">Preparing the view</span></div></div>
+  </section>
+  <footer><span>Parts move only along the assembly axis, preserving order.</span><span>Concept assembly, not an optical prescription. Expanded spacing is illustrative.</span></footer>
+</main>
+<script type="module">
+  import('./main.js').catch(() => {
+    document.querySelector('#fallback-message').textContent='3D resources failed to load. The 2D diagram and part names remain available. Check local dependencies and refresh.';
+    document.querySelector('#status').textContent='2D alternative';
+    document.querySelectorAll('button,input').forEach(el=>el.disabled=true);
+  });
+</script>
+</body>
+</html>

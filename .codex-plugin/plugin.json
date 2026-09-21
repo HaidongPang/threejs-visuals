@@ -1,0 +1,33 @@
+{
+  "name": "threejs-visuals",
+  "version": "0.1.0+codex.20260921073137",
+  "description": "Art-directed, elegant non-game Three.js visuals: meaningful forms, graceful interaction, and browser-verified results.",
+  "author": {
+    "name": "Haidong Pang",
+    "url": "https://github.com/HaidongPang"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Three.js Visuals",
+    "shortDescription": "Beautiful Three.js scenes with elegant interaction",
+    "longDescription": "Let aesthetics guide modeling: combine distinctive forms, composition, materials, lighting, explorable interaction, and real browser verification for technical illustrations, product presentations, and non-game 3D scenes.",
+    "developerName": "Haidong Pang",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "Use $threejs-visuals to create a beautiful explorable model with restrained interaction.",
+      "Use $threejs-visuals to refine the forms, composition, and interaction of this scene.",
+      "Use $threejs-visuals to review the visual and interaction quality of this 3D work."
+    ]
+  },
+  "homepage": "https://github.com/HaidongPang/threejs-visuals",
+  "repository": "https://github.com/HaidongPang/threejs-visuals",
+  "license": "MIT",
+  "keywords": [
+    "threejs",
+    "visual-design",
+    "interaction-design",
+    "technical-visualization",
+    "codex"
+  ]
+}

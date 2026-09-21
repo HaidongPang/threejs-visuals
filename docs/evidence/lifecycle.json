@@ -1,0 +1,21 @@
+{
+  "baseline": {
+    "geometries": 12,
+    "textures": 4
+  },
+  "afterDispose": [
+    {
+      "geometries": 0,
+      "textures": 1
+    },
+    {
+      "geometries": 0,
+      "textures": 1
+    },
+    {
+      "geometries": 0,
+      "textures": 1
+    }
+  ],
+  "method": "three explicit dispose/import cycles on same DOM; GPU resource counts and canvas count, not a full browser heap profile"
+}
