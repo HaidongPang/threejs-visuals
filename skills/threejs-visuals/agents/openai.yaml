@@ -2,3 +2,5 @@ interface:
   display_name: "Three.js Visuals"
   short_description: "Refine beautiful models and elegant interaction through demos"
   default_prompt: "Use $threejs-visuals to refine a beautiful non-game 3D scene with elegant interaction; show working demos when I need to choose a direction."
+  icon_small: "./assets/icon-small.png"
+  icon_large: "./assets/icon-large.png"
